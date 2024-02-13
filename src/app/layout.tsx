@@ -9,16 +9,16 @@ const inter = Inter({subsets: ['latin']})
 const customTheme = extendTheme({
 	typography: {
 		'h1': {
-			'font-size': "50px",
-			'text-transform': 'uppercase',
+			// 'font-size': "50px",
+			// 'text-transform': 'uppercase',
 			'font-family': "itc-avant-garde-gothic-pro"
 		},
 		'h2': {
-			'text-transform': 'uppercase',
+			// 'text-transform': 'uppercase',
 			'font-family': "itc-avant-garde-gothic-pro"
 		},
 		'h3': {
-			'text-transform': 'uppercase',
+			// 'text-transform': 'uppercase',
 			'font-family': "itc-avant-garde-gothic-pro"
 		},
 		'body-md': {

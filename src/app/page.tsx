@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import {Container, Typography} from "@mui/joy";
 import LogoSlider from "@/components/LogoSlider";
 import WhatToDo from "@/components/WhatToDo";
+import AboutMe from "@/components/AboutMe";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
 			<Container>
 			</Container>
 			<WhatToDo/>
+			<AboutMe/>
 		</Styles>
 	)
 }
