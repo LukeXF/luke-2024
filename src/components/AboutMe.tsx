@@ -9,7 +9,7 @@ import profilePic2 from '/public/luke.jpeg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight, faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 
-const WhatToDo = () => {
+const AboutMe = () => {
 	// Add plugin
 	const [emblaRef] = useEmblaCarousel({loop: true}, [Autoplay({
 		delay: 3000,
@@ -72,7 +72,7 @@ const WhatToDo = () => {
 	);
 };
 
-export default WhatToDo;
+export default AboutMe;
 
 
 const Styles = styled.div`

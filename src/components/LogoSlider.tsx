@@ -65,8 +65,9 @@ const Styles = styled.div`
 
 				img {
 					aspect-ratio: 1 / 1;
-					width: 5em;
-					height: 5em;
+					width: 7em;
+					height: 7em;
+					filter: brightness(0) invert(0.4);
 				}
 
 			}
