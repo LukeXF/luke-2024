@@ -53,17 +53,17 @@ const AboutMe = () => {
 					<Grid xs={12} sm={4} md={6} lg={7}>
 						<Typography level="h2">About me</Typography>
 						<Typography level="body-md">
-							Since 2012 I've been coding and building websites and software for businesses in Europe
+							{`Since 2012 I've been coding and building websites and software for businesses in Europe
 							and North America. In 2015 I setup a digital consultancy called &Element and since then I've
-							worked as a contract-CTO leading hundreds of people and projects, helping companies nail their digital growth.
+							worked as a contract-CTO leading hundreds of people and projects, helping companies nail their digital growth.`}
 						</Typography>
 						<Typography level="body-md">
-							I've worked from all around the world supporting businesses launch SaaS platforms, built all
-							kinds of apps, improved/automated business operations and expand their online presence.
+							{`I've worked from all around the world supporting businesses launch SaaS platforms, built all
+							kinds of apps, improved/automated business operations and expand their online presence.`}
 						</Typography>
 						<Typography level="body-md">
-							Today I help anyone from FTSE 250 companies, funded startups and new individuals new to the industry
-							understand and navigate this weird and wonderful digital landscape.
+							{`Today I help anyone from FTSE 250 companies, funded startups and new individuals new to the industry
+							understand and navigate this weird and wonderful digital landscape.`}
 						</Typography>
 					</Grid>
 				</Grid>

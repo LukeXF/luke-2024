@@ -21,8 +21,8 @@ const WhatToDo = () => {
 							<img src="/icons/plane_icon.svg" width="60"/>
 							<Typography level="h3">Contract CTO</Typography>
 							<Typography level="body-md">
-								I work with companies of all sizes to drive innovation, optimise operations,
-								and guide their team towards achieving the company's tech goals.
+								{`I work with companies of all sizes to drive innovation, optimise operations,
+								and guide their team towards achieving the company's tech goals.`}
 							</Typography>
 						</Card>
 					</Grid>
@@ -43,8 +43,8 @@ const WhatToDo = () => {
 							<img src="/icons/laptop_icon.svg" width="60"/>
 							<Typography level="h3">Digital Marketing</Typography>
 							<Typography level="body-md">
-								I improve brand's image and online presence through UX and SEO to build
-								websites and marketing campaigns that are highly converting.
+								{`I improve brand's image and online presence through UX and SEO to build
+								websites and marketing campaigns that are highly converting.`}
 							</Typography>
 						</Card>
 					</Grid>

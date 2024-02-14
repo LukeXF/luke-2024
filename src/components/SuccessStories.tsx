@@ -143,7 +143,7 @@ const SuccessStories = () => {
 
 				<Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={2}>
 					{clients?.filter(client => type === 'All' || client.type === type)?.map((client, index) => (
-						<Card className="card">
+						<Card className="card" key={index}>
 							{client.image && <img src={`/projects/${client.image}`} width="100%"
 							                      className={client.hideBorder ? "hide-border" : ""}/>}
 							<Typography level="h3">{client.name}</Typography>
@@ -175,7 +175,7 @@ const SuccessStories = () => {
 							</Typography>
 							<Box className='key-facts'>
 								{client.facts?.map((fact, index) => (
-									<Box>
+									<Box key={index}>
 										<Typography level="title-lg">{fact.title}</Typography>
 										<Typography level="title-md">{fact?.description?.split(' ')?.map((line, index) => (
 											<React.Fragment key={index}>
