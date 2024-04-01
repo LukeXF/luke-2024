@@ -2,8 +2,8 @@
 import {Inter} from 'next/font/google'
 import './globals.css'
 import {CssBaseline, CssVarsProvider, extendTheme} from "@mui/joy";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
+import {SpeedInsights} from "@vercel/speed-insights/next"
+import {Analytics} from "@vercel/analytics/react"
 
 const inter = Inter({subsets: ['latin']})
 
@@ -51,11 +51,16 @@ export default function RootLayout({
 				<meta name="msapplication-TileColor" content="#2168bc"/>
 				<meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
 				<meta name="theme-color" content="#ffffff"/>
-				<meta property="og:image" content="https://luke.sx/preview.png" />
+				<meta property="og:image" content="https://luke.sx/preview.png"/>
 				<meta name="twitter:card" content="summary_large_image"/>
 				<meta name="twitter:image" content="https://luke.sx/preview.png"/>
 			</head>
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+			{children}
+			<SpeedInsights/>
+			<Analytics/>
+			</body>
+
 			</html>
 		</CssVarsProvider>
 	)
