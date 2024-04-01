@@ -1,7 +1,7 @@
 import {Container, Link, Stack, Typography} from "@mui/joy";
 import styled from '@emotion/styled';
 import Image from 'next/image'
-import profilePic from '/public/luke.jpeg';
+import profilePic from '/public/luke/luke-holiday.jpeg';
 
 const Hero = () => {
 	return (
@@ -54,7 +54,7 @@ const Styles = styled.div`
 		max-width: 700px;
 		text-align: center;
 		z-index: 2;
-		padding: 100px 0;
+		padding: 130px 0 170px;
 	}
 	h1, h2 {
 		color: white;

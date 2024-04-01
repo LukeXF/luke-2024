@@ -70,17 +70,24 @@ export default WhatToDo;
 
 const Styles = styled.div`
 	background: white;
+	margin-top: 5rem;
 
 	h2 {
 		font-size: 2.5rem;
 		margin: 2rem 0;
 	}
-	
+
 	.card {
 		background-color: #f3f4f5;
-		border: 0;
 		margin-bottom: 0.25rem;
 		padding: 3rem;
+		transition: all 0.3s ease-in-out;
+		border: 1px solid #f3f4f5;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid rgba(33, 104, 188, 1);
+		}
 		
 	}
 `;

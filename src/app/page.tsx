@@ -8,7 +8,10 @@ import WhatToDo from "@/components/WhatToDo";
 import AboutMe from "@/components/AboutMe";
 import SuccessStories from "@/components/SuccessStories";
 import BlueLogoSlider from "@/components/BlueLogoSlider";
-
+import Testimonials from "@/components/Testimonials";
+import LogoList from "@/components/LogoList";
+import CallToAction from "@/components/CallToAction";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 
@@ -17,17 +20,16 @@ export default function Home() {
 			<Navbar/>
 			<Hero/>
 			<LogoSlider/>
-			<Container>
-			</Container>
 			<WhatToDo/>
 			<AboutMe/>
 			<SuccessStories/>
-			{/*// testimonials*/}
+			<LogoList/>
+			<CallToAction/>
 			{/*// blogs*/}
-			{/*// review slider*/}
 			{/*// contact form*/}
-			{/*// CTA*/}
-			<BlueLogoSlider/>
+			{/*<BlueLogoSlider/>*/}
+			<Testimonials/>
+			<Footer/>
 		</Styles>
 	)
 }

@@ -218,9 +218,15 @@ const Styles = styled.div`
 
 	.card {
 		background-color: #f3f4f5;
-		border: 0;
 		margin-bottom: 0.25rem;
 		padding: 3rem;
+		transition: all 0.3s ease-in-out;
+		border: 1px solid #f3f4f5;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid rgba(33, 104, 188, 1);
+		}
 	}
 
 	.controls {

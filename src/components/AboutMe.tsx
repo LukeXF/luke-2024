@@ -4,8 +4,10 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from "embla-carousel-autoplay";
 import React, {useState, useEffect} from "react";
 import Image from "next/image";
-import profilePic from '/public/luke.png';
-import profilePic2 from '/public/luke.jpeg';
+import lukeOffice from '/public/luke/luke-office.png';
+import lukeHoliday from '/public/luke/luke-holiday.jpeg';
+import lukeOrange from '/public/luke/luke-orange.png';
+import lukeUos from '/public/luke/luke-uos.png';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight, faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 
@@ -16,7 +18,7 @@ const AboutMe = () => {
 		stopOnInteraction: true,
 	})])
 
-	const images = [profilePic, profilePic2, profilePic];
+	const images = [lukeUos, lukeOffice, lukeHoliday, lukeOrange];
 	const [selectedIndex, setSelectedIndex] = useState(0);
 
 	const nextImage = () => {
@@ -106,6 +108,7 @@ const Styles = styled.div`
 			position: relative;
 			z-index: 2;
 			border-radius: 5px;
+			object-fit: cover;
 		}
 	}
 

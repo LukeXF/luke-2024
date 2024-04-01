@@ -45,8 +45,13 @@ const Styles = styled.div`
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 20px;
+	z-index: 2;
 
 	a {
 		color: white;
+	}
+	
+	b {
+		font-weight: 900;
 	}
 `;
