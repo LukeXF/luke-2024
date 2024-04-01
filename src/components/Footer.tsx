@@ -33,7 +33,7 @@ const LogoSlider = () => {
 								Cloud</Typography></Link>
 						</Stack>
 					</Grid>
-					<Grid xs={6} className="button">
+					<Grid md={6} className="button">
 						<Stack direction="column" spacing={2}>
 							<Typography className="copyright">Copyright 2024 · &Element T/A. Element Softworks Ltd</Typography>
 							<Typography className="other">

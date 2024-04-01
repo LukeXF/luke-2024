@@ -91,7 +91,19 @@ const Styles = styled.div`
 		max-width: 400px;
 		margin-left: 30px;
 		margin-bottom: 30px;
-
+		
+		img {
+			@media only screen and (max-width: 780px) {
+				max-width: 350px !important;
+				width: 350px !important;
+				height: 350px !important;
+			}
+			@media only screen and (max-width: 500px) {
+				max-width: 300px !important;
+				width: 300px !important;
+				height: 300px !important;
+			}
+		}
 		.box {
 			position: absolute;
 			width: 200px;

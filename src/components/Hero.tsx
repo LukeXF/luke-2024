@@ -55,6 +55,9 @@ const Styles = styled.div`
 		text-align: center;
 		z-index: 2;
 		padding: 130px 0 170px;
+		@media only screen and (max-width: 780px) {
+			padding-bottom: 100px;
+		}
 	}
 	h1, h2 {
 		color: white;

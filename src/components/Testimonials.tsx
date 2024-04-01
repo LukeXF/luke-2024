@@ -48,7 +48,7 @@ const LogoSlider = () => {
 							</Typography>
 						</Card>
 					</Grid>
-					{testimonials?.map((review, index) => <Grid md={4} key={index}>
+					{testimonials?.map((review, index) => <Grid xs={12} md={4} key={index}>
 						<Card className={`card card-clickable ${selectedReview === index ? 'card-active' : ''}`} onClick={() => setSelectedReview(index)}>
 							<Stack direction="row">
 								<Image src={review?.photo} alt={`${review?.name} avatar`} width="60" height="60"

@@ -1,4 +1,3 @@
-import {Typography} from "@mui/joy";
 import styled from '@emotion/styled';
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from "next/image";
@@ -67,7 +66,10 @@ const Styles = styled.div`
 	margin-top: -4rem;
 	z-index: 10;
 	position: relative;
-	
+
+	@media only screen and (max-width: 780px) {
+		margin-top: -2rem;
+	}
 	p {
 		text-align: center;
 		width: 100%;
@@ -77,18 +79,15 @@ const Styles = styled.div`
 
 	.embla {
 		overflow: hidden;
-		z-index: 50;
+		z-index: 10;
 
 		.embla__container {
 			display: flex;
-			z-index: 50;
-
+			
 			.embla__slide {
 				flex: 0 0 7%;
 				min-width: 0;
-				z-index: 50;
 				//max-width: 50px;
-
 				img {
 					aspect-ratio: 1 / 1;
 					width: 7em;
@@ -96,6 +95,52 @@ const Styles = styled.div`
 					z-index: 50;
 					border-radius: 5px;
 					//filter: brightness(0) invert(0.4);
+				}
+
+				@media only screen and (max-width: 1670px) {
+					flex: 0 0 8%;
+				}
+				@media only screen and (max-width: 1430px) {
+					flex: 0 0 8.5%;
+				}
+				@media only screen and (max-width: 1300px) {
+					flex: 0 0 8.75%;
+
+					img {
+						width: 6em;
+						height: 6em;
+					}
+				}
+				
+				@media only screen and (max-width: 1200px) {
+					flex: 0 0 9%;
+				}
+				@media only screen and (max-width: 1024px) {
+					flex: 0 0 11%;
+
+					img {
+						width: 6em;
+						height: 6em;
+					}
+				}
+				@media only screen and (max-width: 900px) {
+					flex: 0 0 13%;
+				}
+				@media only screen and (max-width: 780px) {
+					flex: 0 0 14%;
+					img {
+						width: 5em;
+						height: 5em;
+					}
+				}
+				@media only screen and (max-width: 700px) {
+					flex: 0 0 18%;
+				}
+				@media only screen and (max-width: 600px) {
+					flex: 0 0 20%;
+				}
+				@media only screen and (max-width: 450px) {
+					flex: 0 0 24%;
 				}
 
 			}

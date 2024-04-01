@@ -35,24 +35,24 @@ const LogoSlider = () => {
 			<Container>
 				<Typography level="h2">Other companies I have worked with</Typography>
 				<Grid container spacing={2} className="grid">
-					<Grid xs={2}><Image src={asics} alt="asics"/></Grid>
-					<Grid xs={2}><Image src={ballen} alt="ballen"/></Grid>
-					<Grid xs={2}><Image src={chevrolet} alt="chevrolet"/></Grid>
-					<Grid xs={2}><Image src={chupaChups} alt="chupaChups"/></Grid>
-					<Grid xs={2}><Image src={coty} alt="coty"/></Grid>
-					<Grid xs={2}><Image src={gucci} alt="gucci"/></Grid>
-					<Grid xs={2}><Image src={iqos} alt="iqos"/></Grid>
-					<Grid xs={2}><Image src={mediaMarkt} alt="mediaMarkt"/></Grid>
-					<Grid xs={2}><Image src={mod} alt="mod"/></Grid>
-					<Grid xs={2}><Image src={oxin} alt="oxin"/></Grid>
-					<Grid xs={2}><Image src={philips} alt="philips"/></Grid>
-					<Grid xs={2}><Image src={pmi} alt="pmi"/></Grid>
-					<Grid xs={2}><Image src={rit} alt="rit"/></Grid>
-					<Grid xs={2}><Image src={rollsRoyce} alt="rollsRoyce"/></Grid>
-					<Grid xs={2}><Image src={samsung} alt="samsung"/></Grid>
-					<Grid xs={2}><Image src={snc} alt="snc"/></Grid>
-					<Grid xs={2}><Image src={uoe} alt="uoe"/></Grid>
-					<Grid xs={2}><Image src={uos} alt="uos"/></Grid>
+					<Grid xs={4} sm={2}><Image src={asics} alt="asics"/></Grid>
+					<Grid xs={4} sm={2}><Image src={ballen} alt="ballen"/></Grid>
+					<Grid xs={4} sm={2}><Image src={chevrolet} alt="chevrolet"/></Grid>
+					<Grid xs={4} sm={2}><Image src={chupaChups} alt="chupaChups"/></Grid>
+					<Grid xs={4} sm={2}><Image src={coty} alt="coty"/></Grid>
+					<Grid xs={4} sm={2}><Image src={gucci} alt="gucci"/></Grid>
+					<Grid xs={4} sm={2}><Image src={iqos} alt="iqos"/></Grid>
+					<Grid xs={4} sm={2}><Image src={mediaMarkt} alt="mediaMarkt"/></Grid>
+					<Grid xs={4} sm={2}><Image src={mod} alt="mod"/></Grid>
+					<Grid xs={4} sm={2}><Image src={oxin} alt="oxin"/></Grid>
+					<Grid xs={4} sm={2}><Image src={philips} alt="philips"/></Grid>
+					<Grid xs={4} sm={2}><Image src={pmi} alt="pmi"/></Grid>
+					<Grid xs={4} sm={2}><Image src={rit} alt="rit"/></Grid>
+					<Grid xs={4} sm={2}><Image src={rollsRoyce} alt="rollsRoyce"/></Grid>
+					<Grid xs={4} sm={2}><Image src={samsung} alt="samsung"/></Grid>
+					<Grid xs={4} sm={2}><Image src={snc} alt="snc"/></Grid>
+					<Grid xs={4} sm={2}><Image src={uoe} alt="uoe"/></Grid>
+					<Grid xs={4} sm={2}><Image src={uos} alt="uos"/></Grid>
 				</Grid>
 			</Container>
 		</Styles>

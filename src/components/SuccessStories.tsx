@@ -231,6 +231,7 @@ const Styles = styled.div`
 
 	.controls {
 		margin: 20px 0;
+		overflow: scroll;
 	}
 
 	i {
