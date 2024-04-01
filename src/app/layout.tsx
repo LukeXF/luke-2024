@@ -1,8 +1,9 @@
 "use client";
-import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
 import './globals.css'
 import {CssBaseline, CssVarsProvider, extendTheme} from "@mui/joy";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({subsets: ['latin']})
 

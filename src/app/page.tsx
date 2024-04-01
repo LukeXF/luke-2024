@@ -10,7 +10,6 @@ import Testimonials from "@/components/Testimonials";
 import LogoList from "@/components/LogoList";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
 	return (
