@@ -2,19 +2,17 @@
 import styled from '@emotion/styled';
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import {Container, Typography} from "@mui/joy";
 import LogoSlider from "@/components/LogoSlider";
 import WhatToDo from "@/components/WhatToDo";
 import AboutMe from "@/components/AboutMe";
 import SuccessStories from "@/components/SuccessStories";
-import BlueLogoSlider from "@/components/BlueLogoSlider";
 import Testimonials from "@/components/Testimonials";
 import LogoList from "@/components/LogoList";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
-
 	return (
 		<Styles>
 			<Navbar/>
