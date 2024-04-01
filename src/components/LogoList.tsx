@@ -1,4 +1,4 @@
-import {Typography, Container, Grid} from "@mui/joy";
+import {Typography, Container, Grid, Link} from "@mui/joy";
 import styled from '@emotion/styled';
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from "next/image";
@@ -24,62 +24,75 @@ import uoe from '/public/all-logos/logo-uoe.png';
 import uos from '/public/all-logos/logo-uos.png';
 
 const LogoSlider = () => {
-	// Add plugin
-	const [emblaRef] = useEmblaCarousel({loop: true}, [Autoplay({
-		delay: 3000,
-		stopOnInteraction: true,
-	})])
+		// Add plugin
+		const [emblaRef] = useEmblaCarousel({loop: true}, [Autoplay({
+			delay: 3000,
+			stopOnInteraction: true,
+		})])
 
-	return (
-		<Styles>
-			<Container>
-				<Typography level="h2">Other companies I have worked with</Typography>
-				<Grid container spacing={2} className="grid">
-					<Grid xs={4} sm={2}><Image src={asics} alt="asics"/></Grid>
-					<Grid xs={4} sm={2}><Image src={ballen} alt="ballen"/></Grid>
-					<Grid xs={4} sm={2}><Image src={chevrolet} alt="chevrolet"/></Grid>
-					<Grid xs={4} sm={2}><Image src={chupaChups} alt="chupaChups"/></Grid>
-					<Grid xs={4} sm={2}><Image src={coty} alt="coty"/></Grid>
-					<Grid xs={4} sm={2}><Image src={gucci} alt="gucci"/></Grid>
-					<Grid xs={4} sm={2}><Image src={iqos} alt="iqos"/></Grid>
-					<Grid xs={4} sm={2}><Image src={mediaMarkt} alt="mediaMarkt"/></Grid>
-					<Grid xs={4} sm={2}><Image src={mod} alt="mod"/></Grid>
-					<Grid xs={4} sm={2}><Image src={oxin} alt="oxin"/></Grid>
-					<Grid xs={4} sm={2}><Image src={philips} alt="philips"/></Grid>
-					<Grid xs={4} sm={2}><Image src={pmi} alt="pmi"/></Grid>
-					<Grid xs={4} sm={2}><Image src={rit} alt="rit"/></Grid>
-					<Grid xs={4} sm={2}><Image src={rollsRoyce} alt="rollsRoyce"/></Grid>
-					<Grid xs={4} sm={2}><Image src={samsung} alt="samsung"/></Grid>
-					<Grid xs={4} sm={2}><Image src={snc} alt="snc"/></Grid>
-					<Grid xs={4} sm={2}><Image src={uoe} alt="uoe"/></Grid>
-					<Grid xs={4} sm={2}><Image src={uos} alt="uos"/></Grid>
-				</Grid>
-			</Container>
-		</Styles>
-	);
-};
+		const brands = [
+			{name: "Asics", logo: asics, domain: "https://www.asics.com/"},
+			{name: "Ballen Studios", logo: ballen, domain: "https://ballenstudios.com/"},
+			{name: "Chevrolet", logo: chevrolet, domain: "https://www.chevrolet.com/"},
+			{name: "Chupa Chups", logo: chupaChups, domain: "https://www.chupachups.co.uk/"},
+			{name: "Coty", logo: coty, domain: "https://www.coty.com/"},
+			{name: "Gucci", logo: gucci, domain: "https://gucci.com/"},
+			{name: "IQOS", logo: iqos, domain: "https://www.iqos.com/"},
+			{name: "Media Markt", logo: mediaMarkt, domain: "https://mediamarkt.de/"},
+			{name: "Ministry of Defence", logo: mod, domain: "https://mod.uk"},
+			{name: "Oxford Innovation", logo: oxin, domain: "https://oxfordinnovation.co.uk/"},
+			{name: "Philips", logo: philips, domain: "https://www.philips.co.uk/"},
+			{name: "Philip Morris International", logo: pmi, domain: "https://www.pmi.com/"},
+			{name: "Rit Dye", logo: rit, domain: "https://www.ritdye.com/"},
+			{name: "Rolls Royce", logo: rollsRoyce, domain: "https://www.rolls-roycemotorcars.com/"},
+			{name: "Samsung", logo: samsung, domain: "https://www.samsung.com/uk/"},
+			{name: "Suffolk New College", logo: snc, domain: "https://www.suffolk.ac.uk/"},
+			{name: "University of Essex", logo: uoe, domain: "https://www.essex.ac.uk/"},
+			{name: "University of Suffolk", logo: uos, domain: "https://uos.ac.uk/"}
+		];
+
+		return (
+			<Styles>
+				<Container>
+					<Typography level="h2">Other companies I have worked with</Typography>
+					<Grid container spacing={2} className="grid">
+						{brands.map((brand, index) =>
+							<Grid xs={4} key={index} sm={2}>
+								<Link href={brand?.domain} target="_blank">
+									<Image src={brand?.logo} alt={brand?.name}/>
+								</Link>
+							</Grid>
+						)}
+					</Grid>
+				</Container>
+			</Styles>
+		);
+	}
+;
 
 export default LogoSlider;
 
 
 const Styles = styled.div`
 	margin-top: 4rem;
+
 	img {
 		transition: all 0.3s ease-in-out;
 		border: 1px solid #f3f4f5;
 		cursor: pointer;
+
 		&:hover {
 			border: 1px solid rgba(33, 104, 188, 1);
 		}
 	}
-	
+
 	.grid {
 		img {
 			max-width: 100%;
 			height: auto;
 		}
 	}
-	
+
 	h2 {
 		font-size: 2.5rem;
 		margin: 2rem 0;

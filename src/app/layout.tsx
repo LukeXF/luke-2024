@@ -36,7 +36,21 @@ export default function RootLayout({
 		<CssVarsProvider theme={customTheme}>
 			<CssBaseline/>
 			<html lang="en">
-			<meta name="viewport" content="initial-scale=1, width=device-width"/>
+			<head>
+				<meta name="description"
+				      content="Unlock your business's online potential with a Senior Tech Consultant and Contract CTO in London and Essex. Specializing in Web Development and Digital Marketing to enhance your online presence and drive growth. Let's build your success together."/>
+				<title>Luke Brown - Contract CTO in London and Essex</title>
+				<meta name="viewport" content="initial-scale=1, width=device-width"/>
+				<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+				<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
+				<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
+				<link rel="manifest" href="/favicon/site.webmanifest"/>
+				<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#2168bc"/>
+				<link rel="shortcut icon" href="/favicon/favicon.ico"/>
+				<meta name="msapplication-TileColor" content="#2168bc"/>
+				<meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
+				<meta name="theme-color" content="#ffffff"/>
+			</head>
 			<body className={inter.className}>{children}</body>
 			</html>
 		</CssVarsProvider>
