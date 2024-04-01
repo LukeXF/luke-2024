@@ -38,7 +38,7 @@ export default function RootLayout({
 			<html lang="en">
 			<head>
 				<meta name="description"
-				      content="Unlock your business's online potential with a Senior Tech Consultant and Contract CTO in London and Essex. Specializing in Web Development and Digital Marketing to enhance your online presence and drive growth. Let's build your success together."/>
+				      content="Unlock your business's online potential with a Senior Tech Consultant and Contract CTO in London and Essex. Web Development and Digital Marketing Specialist."/>
 				<title>Luke Brown - Contract CTO in London and Essex</title>
 				<meta name="viewport" content="initial-scale=1, width=device-width"/>
 				<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
@@ -50,6 +50,9 @@ export default function RootLayout({
 				<meta name="msapplication-TileColor" content="#2168bc"/>
 				<meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
 				<meta name="theme-color" content="#ffffff"/>
+				<meta property="og:image" content="https://luke.sx/preview.png" />
+				<meta name="twitter:card" content="summary_large_image"/>
+				<meta name="twitter:image" content="https://luke.sx/preview.png"/>
 			</head>
 			<body className={inter.className}>{children}</body>
 			</html>
