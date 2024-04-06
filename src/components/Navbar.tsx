@@ -1,6 +1,5 @@
 import {Container, Link, Stack} from "@mui/joy";
 import styled from '@emotion/styled';
-import useEmblaCarousel from 'embla-carousel-react'
 
 const Navbar = () => {
 	return (
@@ -19,9 +18,9 @@ const Navbar = () => {
 						direction="row"
 						spacing={2}
 					>
-						<Link href="#variants">Nomad</Link>
-						<Link href="#variants" variant="plain">
-							Works
+						<Link href="/">Home</Link>
+						<Link href="/nomad">
+							Nomad
 						</Link>
 						<Link href="#variants" variant="soft">
 							Contact
@@ -53,5 +52,16 @@ const Styles = styled.div`
 	
 	b {
 		font-weight: 900;
+	}
+	
+	.MuiLink-colorPrimary {
+		&:hover {
+			color: #999;
+		}
+	}
+	.MuiLink-variantSoft {
+		padding: 5px 15px;
+		background: white;
+		color: #2168BC;
 	}
 `;

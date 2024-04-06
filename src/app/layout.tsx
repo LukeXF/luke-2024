@@ -4,6 +4,8 @@ import './globals.css'
 import {CssBaseline, CssVarsProvider, extendTheme} from "@mui/joy";
 import {SpeedInsights} from "@vercel/speed-insights/next"
 import {Analytics} from "@vercel/analytics/react"
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -56,9 +58,11 @@ export default function RootLayout({
 				<meta name="twitter:image" content="https://luke.sx/preview.png"/>
 			</head>
 			<body className={inter.className}>
+			<Navbar/>
 			{children}
 			<SpeedInsights/>
 			<Analytics/>
+			<Footer/>
 			</body>
 
 			</html>

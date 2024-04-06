@@ -14,7 +14,6 @@ import Footer from "@/components/Footer";
 export default function Home() {
 	return (
 		<Styles>
-			<Navbar/>
 			<Hero/>
 			<LogoSlider/>
 			<WhatToDo/>
@@ -26,7 +25,6 @@ export default function Home() {
 			{/*// contact form*/}
 			{/*<BlueLogoSlider/>*/}
 			<Testimonials/>
-			<Footer/>
 		</Styles>
 	)
 }
