@@ -7,7 +7,48 @@
 
 @import url("https://use.typekit.net/wmk2kja.css");
 
-
 h1 {
 	font-size: 180px;
+}
+
+.hero-smaller {
+	background: #2168BC;
+	padding: 150px 0 100px;
+	color: white;
+}
+
+.hero-smaller h1, .hero-smaller h2 {
+	color: white
+}
+
+.location-card {
+	margin: 50px 0;
+	padding: 50px 30px;
+	position: relative;
+	min-height: 300px;
+}
+
+.location-card * {
+	color: white;
+}
+
+.location-card::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: .8;
+	content: "";
+	z-index: -1;
+	background-size: 100%;
+	background-position: center;
+	transition: all .3s ease-in-out;
+}
+.location-card:hover::before {
+	background-size: 102%;
+}
+
+.location-card .MuiTypography-h4 {
+	margin-top: 0;
 }

@@ -14,18 +14,18 @@ const customTheme = extendTheme({
 		'h1': {
 			// 'font-size': "50px",
 			// 'text-transform': 'uppercase',
-			'font-family': "itc-avant-garde-gothic-pro"
+			'fontFamily': "itc-avant-garde-gothic-pro"
 		},
 		'h2': {
 			// 'text-transform': 'uppercase',
-			'font-family': "itc-avant-garde-gothic-pro"
+			'fontFamily': "itc-avant-garde-gothic-pro"
 		},
 		'h3': {
 			// 'text-transform': 'uppercase',
-			'font-family': "itc-avant-garde-gothic-pro"
+			'fontFamily': "itc-avant-garde-gothic-pro"
 		},
 		'body-md': {
-			'font-family': "itc-avant-garde-gothic-pro"
+			'fontFamily': "itc-avant-garde-gothic-pro"
 		},
 
 	},

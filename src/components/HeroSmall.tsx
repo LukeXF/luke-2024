@@ -1,20 +1,20 @@
 import {Container, Link, Stack, Typography} from "@mui/joy";
-import styled from '@emotion/styled';
 
-const Hero = ({title}: { title: string }) => {
+const Hero = ({title, description}: { title: string; description: string; }) => {
 	return (
-		<>
-			<div className="bg"/>
-			<Container className="wrapper">
+		<div className="hero-smaller">
+			<Container>
 				<Stack
 					direction="column"
 					alignItems="center"
 					spacing={2}
 				>
-					{title}
+					<Typography level="h1">{title}</Typography>
+					<Typography level="h2" fontSize="md" sx={{maxWidth: 650, textAlign: 'center'}}
+					>{description}</Typography>
 				</Stack>
 			</Container>
-		</>
+		</div>
 	);
 };
 
