@@ -13,7 +13,7 @@ const SuccessStories = () => {
 		})])
 
 		const [type, setType] = useState('All');
-		const types = ['All', 'Contract CTO', 'Business Advisor', 'Digital Marketing', 'Tech Mentor'];
+		const types = ['All', 'Contract CTO', 'Tech Mentor'];
 
 		const clients = [
 			{
@@ -52,6 +52,24 @@ const SuccessStories = () => {
 				}, {
 					title: "141",
 					description: "projects"
+				}]
+			},
+			{
+				name: "ADP List",
+				type: "Tech Mentor",
+				tagline: "Guiding the next generation of tech talent",
+				description: "Providing mentorship to individuals entering the tech sector, helping them to progress through the design and development career paths.",
+				image: "adp.png",
+				dates: "2023-2024",
+				facts: [{
+					title: "1,250+",
+					description: "minutes mentored"
+				}, {
+					title: "25",
+					description: "people mentored"
+				}, {
+					title: "8 jobs",
+					description: "helped secure"
 				}]
 			},
 			{
@@ -111,6 +129,24 @@ const SuccessStories = () => {
 				}]
 			},
 			{
+				name: "Enterprise Nation",
+				type: "Tech Mentor",
+				tagline: "Working with HM Government",
+				description: "I am an approved mentor supporting the UK government's Help To Grow initiative.\nI provide guidance to businesses between 10-250 employees to help them grow and succeed across a 12 rotating week programme.",
+				image: "enterprise-nation.png",
+				dates: "2023-2024",
+				facts: [{
+					title: "12 weeks",
+					description: "per company"
+				}, {
+					title: "10 hours",
+					description: "1-2-1 mentoring"
+				}, {
+					title: "96%",
+					description: "growth rate"
+				}]
+			},
+			{
 				name: "Galactic Servers",
 				type: "Contract CTO",
 				tagline: "Game server hosting",
@@ -128,8 +164,7 @@ const SuccessStories = () => {
 					title: "2216",
 					description: "orders placed"
 				}]
-			},
-			{name: "bus", type: "Business Advisor", description: "4"},
+			}
 		]
 		return <Styles>
 			<Container>

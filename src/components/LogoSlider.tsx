@@ -85,7 +85,7 @@ const Styles = styled.div`
 			display: flex;
 			
 			.embla__slide {
-				flex: 0 0 7%;
+				flex: 0 0 6%;
 				min-width: 0;
 				//max-width: 50px;
 				img {
@@ -97,6 +97,9 @@ const Styles = styled.div`
 					//filter: brightness(0) invert(0.4);
 				}
 
+				@media only screen and (max-width: 2000px) {
+					flex: 0 0 7%;
+				}
 				@media only screen and (max-width: 1670px) {
 					flex: 0 0 8%;
 				}

@@ -31,7 +31,7 @@ const LogoSlider = () => {
 		{
 			name: "Ben Stacy",
 			role: "CEO, Forge Relations",
-			testimonial: "We have worked with Luke and &Element on a number of prototypes over the years, which has led to many successful projects together. Luke is a delight to work with and I wish him the best of luck in future endeavours.",
+			testimonial: "We have worked with Luke and his team on a number of prototypes over the years, which has led to many successful projects together. Luke is a delight to work with and has lead the technical delivery of our largest digital projects successfully. It's great having a contract CTO I can rely on to get the job done.",
 			photo: benStacy
 		}];
 	const [selectedReview, setSelectedReview] = useState(0);
